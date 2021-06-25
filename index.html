@@ -2,40 +2,20 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="theme.css">
-  <meta charset="utf-8"></meta>
-  <meta keywords="Cameron, Gallant, Personal, Website"></meta>
   <title>Cameron M. Gallant</title>
-  <script lang="javascript" src"script.js"></script>
-  <script>
-  function displayNav() {
-    if (document.getElementById(nav_links).display = 'none') {
-      document.getElementById(nav_links).display = 'flex';
-    } else {
-      document.getElementById(nav_links).display = 'none';
-    };
-  };
-  </script>
+  <script src="./script.js"></script>
 </head>
 <body>
-  <div class="div_container">
-    <div class="div_header">
-      <div class="div_rightheader">
-        <h1 id="header_title">Cameron Gallant | Engineer, Programmer and Student</h1>
-      </div>
-      <div class="div_leftheader">
-        <a id="nav_button" href="#" onClick="displayNav()">☰<a>
-        <div id="nav_links">
-            <a href="#blog" class="nav_redirect">Blog</a>
-            <a href="#projects" class="nav_redirect">Projects</a>
-            <a href="#contact" class="nav_redirect">Contact</a>
+  <div class="divContainer">
+    <div class="divContent">
+        <h1 id='nameHeading'>Cameron Gallant</h1>
+        <h2 id='nameSubtext'>Engineering Student, Programmer</h2>
+        <img src='./images/nav-arrow.png' id='menuButton' onclick='menuToggle()'></img>
+        <div id="menuList" style='visibility: hidden'>
+          <a href="./projects.html" class="menuRedirect">Projects</a>
+          <a href="#resume" class="menuRedirect">Resume</a>
+          <a href="#contact" class="menuRedirect">Contact</a>
         </div>
-      </div>
-    </div>
-    <div class="div_content">
-      <div class="div_textblock">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
     </div>
   </div>
 </body>
